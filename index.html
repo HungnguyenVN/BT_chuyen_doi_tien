@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    table{border:3px solid rgb(0, 255, 200);}
+    th{border:5px dotted black;}
+    td{border:1px dashed blue;}
+</style>
+<body>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>fromCurrent</td>
+            <td>toCurrent</td>
+        </tr>
+        <tr>
+            <td><input type="text" id = "input"></td>
+            <td>
+            <select name="" id="fromCurrent">
+                <option value="0.8">EUR</option>
+                <option value="20000">VND</option>
+                <option value="1">Dollar</option>
+            </select>
+            <td>
+                <select name="" id="toCurrent">
+                    <option value="0.8">EUR</option>
+                    <option value="20000">VND</option>
+                    <option value="1">Dollar</option>
+                </select>
+            <td><button onclick = "change()">Change</button></td>
+        </tr>
+    </table>
+    <p id = 'result'>Result</p>
+    <script src = 'my.js'></script>
+</html>
